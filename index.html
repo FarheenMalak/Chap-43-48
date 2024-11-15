@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Question 1: Alert on Link Click -->
+    <a href="#" onclick="showAlert()">Click me</a>
+
+    <hr>
+
+    <!-- Question 2: -->
+    <h2>Click on a mobile image:</h2>
+    <img src="mobile1.jpg" alt="Mobile 1" onclick="showMessage('Mobile 1')">
+    <img src="mobile2.jpg" alt="Mobile 2" onclick="showMessage('Mobile 2')">
+    <img src="mobile3.jpg" alt="Mobile 3" onclick="showMessage('Mobile 3')">
+
+    <hr>
+
+    <!-- Question 3: Student Records Table with Delete -->
+    <h2>Student Records</h2>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>20</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>22</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Samuel Brown</td>
+                <td>21</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Linda Green</td>
+                <td>23</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Chris White</td>
+                <td>19</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Maria Black</td>
+                <td>24</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>James Blue</td>
+                <td>20</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Emily Yellow</td>
+                <td>21</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Michael Red</td>
+                <td>22</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Amy White</td>
+                <td>20</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Question 4: Counter with Increase and Decrease Buttons -->
+    <h2>Counter</h2>
+    <button onclick="decreaseCounter()">Decrease</button>
+    <span id="counterValue">0</span>
+    <button onclick="increaseCounter()">Increase</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
